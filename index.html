@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <section id="about">
+        <div>
+          <header>
+            <nav class="navigation">
+              <h1>PStore</h1>
+              <ul>
+                <li><p>Tecnologia</p></li>
+                <li><p>Utensílios</p></li>
+                <li><p>Periféricos</p></li>
+                <li><p>Vestuário</p></li>
+                <li><p>Importados</p></li>
+                <li><p>Em promoção</p></li>
+              </ul>
+            </nav>
+            <p class="description">PStore.inc</p>
+          </header>
+
+          <div class="about-container">
+            <div class="text-section">
+              <h1>Compre os melhores produtos do mundo inteiro</h1>
+              <p>
+                Aqui temos produtos de qualidade on-demand, com frete grátis
+                para todo o Brasil
+              </p>
+
+              <div class="buttons">
+                <a href="">Produtos </a>
+                <a href="">Cadastro</a>
+              </div>
+            </div>
+            <div class="image-section">
+              <img src="assets/images/bottle.png" alt="IMAGEM" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products">
+        <header>
+          <h2>Produtos mais novos</h2>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Procure por produtos da loja"
+          />
+          <p>PSTore</p>
+        </header>
+        <div id="products-container"></div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="text">
+                <h2>Faça o seu checkout</h2>
+                <p class="description">PStore.inc</p>
+              </div>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div id="checkout">
+                <h1>Confira aqui os produtos no seu carrinho</h1>
+                <p>Para adicionar mais produtos, volta na tela anterior e selecione outro produto.</p>
+                <div>
+                  <h3>Lista de Produtos no Carrinho: </h3>
+                  <div id="cart-products-container">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <h3>
+                Não ofereçemos seguros de mais de 7 dias, caso seu produto
+                esteja defeituoso cheque com o fabricante.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
