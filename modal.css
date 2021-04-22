@@ -83,7 +83,13 @@
   justify-content: space-between;
 
   padding: 2px 16px;
-  background: var(--lightsand);
+
+  background: rgb(222, 117, 9);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 117, 9, 1) 0%,
+    rgba(255, 139, 21, 1) 100%
+  );
 
   color: #fff;
 }
@@ -91,6 +97,7 @@
 .modal-header .text {
   display: flex;
   justify-content: space-around;
+
   align-items: center;
 
   width: 30%;
@@ -108,12 +115,11 @@ p {
   color: #fff;
   padding: 64px;
 }
+
 .modal-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  outline: 0;
 
   width: 100%;
   height: 48px;
@@ -125,15 +131,12 @@ p {
   letter-spacing: 1px;
   font-family: Raleway;
 
-  background: rgb(201, 115, 25);
   background: linear-gradient(
     138deg,
     rgba(201, 115, 25, 1) 0%,
     rgba(255, 139, 21, 1) 47%,
     rgba(255, 188, 45, 1) 93%
   );
-
-  cursor: pointer;
 }
 
 #cart-products-container {
@@ -149,7 +152,7 @@ p {
   align-items: center;
 
   background: #fff;
-  width: 64%;
+  width: 80%;
   padding: 56px;
 
   border-radius: 8px;
@@ -167,31 +170,61 @@ p {
 }
 
 #cart-products-container #cart-div h1 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #cart-products-container #cart-div #product-image-div img {
-  height: 164px;
+  height: 250px;
+  width: 250px;
 }
-
 #cart-products-container #cart-div button {
-  margin: 20px 0 0 10px;
+  margin-top: 20px;
   border-radius: 6px;
 
+  width: 30px;
+  height: 24px;
+
   outline: none;
-  color: #000;
+  color: #fff;
   cursor: pointer;
+  background: #000;
 }
 
-::-webkit-scrollbar{
-  width: 6px;
+#cart-products-container #cart-div #product-section-div * {
+  margin: 10px 0px;
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: var(--tertiary);
-  border-radius: 4px;
+#cart-products-container #cart-div #product-section-div h2 {
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 560px;
 }
 
-::-webkit-scrollbar-track{
-  background-color: var(--secondary);
+#cart-products-container #cart-div #product-section-div p {
+  color: gray;
+}
+
+#cart-products-container #cart-div #product-section-div p span {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  margin:0px 0px 6px;
+}
+
+#cart-products-container #cart-div #product-section-div .forms {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--lightsand);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
 }

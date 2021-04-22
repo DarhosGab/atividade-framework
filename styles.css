@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 :root {
   --sand: #a45300;
   --lightsand: #ff8b15;
@@ -22,7 +23,6 @@ input {
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,18 +59,18 @@ body {
 }
 
 .container #about header .navigation {
-  margin: 32px;
+  margin: 12px;
 
   display: flex;
   justify-content: start;
   align-items: center;
 
-  height: 56px;
+  height: 44px;
   color: #f0f0f5;
 }
 
 .container #about header .navigation h1 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 500;
 
   margin: 16px;
@@ -82,6 +82,7 @@ body {
   list-style: none;
 }
 .container #about header .navigation ul li {
+  font-size: 14px;
   margin: 0 16px;
   font-weight: 500;
 }
@@ -93,14 +94,15 @@ body {
 }
 
 .container #about .about-container .text-section {
-  margin: 0px 48px;
+  margin: 15px 120px 15px 80px;
 }
 
 .container #about .about-container .text-section h1 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 600;
   width: 64%;
 }
+
 .container #about .about-container .text-section p {
   font-size: 16px;
   margin: 32px 0px;
@@ -116,14 +118,15 @@ body {
 }
 
 .container #about .about-container .buttons a {
-  padding: 12px 48px;
+  padding: 10px 34px;
 
   text-decoration: none;
   color: var(--lightsand);
   border: 3px solid var(--lightsand);
   background: #fff;
 
-  font-weight: 500;
+
+  font-weight: 600;
   transition: background-color 0.2s;
 
   border-radius: 32px;
@@ -144,18 +147,21 @@ body {
 
 .container #about .about-container .buttons a + a:hover {
   color: var(--lightsand);
+  border: 3px solid var(--lightsand);
   background: #fff;
 }
+
 .container #about .about-container .image-section {
   max-height: 300px;
   max-width: 300px;
 }
 
 .container #about .about-container .image-section img {
-  max-height: 280px;
+  max-height: 240px;
 }
+
 .container #products {
-  background: #f0f0f5;
+  background: #eeeef3;
   height: 55%;
   color: #000;
 }
@@ -163,16 +169,17 @@ body {
 .container #products header {
   display: flex;
   justify-content: space-around;
-  margin: 32px;
-  height: 48px;
+  margin: 22px;
+  height: 40px;
 }
 
 .container #products header h2 {
+  font-size: 22px;
   font-weight: 400;
 }
 
 .container #products header input {
-  width: 52%;
+  width: 60%;
   color: #000;
   font-size: 16px;
   font-weight: 400;
@@ -189,14 +196,14 @@ body {
 .container #products #products-container #product-div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
   margin: 0 10px;
 
-  height: 360px;
-  width: 200px;
-  padding: 54px 16px;
+  height: 274px;
+  width: 160px;
+  padding: 20px 10px;
   border-radius: 8px;
 
   background: rgb(255, 255, 255);
@@ -205,23 +212,23 @@ body {
 }
 
 .container #products #products-container #product-div:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .container #products #products-container #product-div img {
-  height: 120px;
+  height: 67px;
 }
 
 .container #products #products-container #product-div h2 {
   text-align: start;
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .container #products #products-container #product-div p {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   opacity: 0.8;
 }
 
@@ -232,7 +239,7 @@ body {
   margin-right: 8px;
 
   color: var(--lightsand);  
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
 }
 .container #products #products-container #product-div h5 p {
@@ -247,13 +254,13 @@ body {
   outline: 0;
 
   width: 100%;
-  height: 48px;
+  height: 44px;
 
   color: #fff;
   border-radius: 0px 0px 8px 8px;
 
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-family: Raleway;
 
@@ -266,4 +273,86 @@ body {
   );
 
   cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1400px){
+  .container #about header .navigation {
+    margin: 32px;
+    height: 56px;
+  }
+  
+  .container #about header .navigation h1 {
+    font-size: 32px;
+  }
+
+  .container #about header .navigation ul li {
+    margin: 0 16px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .container #about .about-container .text-section {
+    margin: 0px 48px;
+  }
+  
+  .container #about .about-container .text-section h1 {
+    font-size: 32px;
+  }
+  
+  .container #about .about-container .buttons a {
+    padding: 12px 48px;
+
+  }
+
+  
+  .container #about .about-container .image-section img {
+    max-height: 280px;
+  }
+  
+  .container #products header {
+    margin: 32px;
+    height: 48px;
+  }
+  
+  .container #products header h2 {
+    font-weight: 400;
+  }
+  
+  .container #products header input {
+    width: 52%;
+  }
+  
+  .container #products #products-container #product-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 360px;
+    width: 200px;
+    padding: 54px 16px;
+  }
+  
+  .container #products #products-container #product-div img {
+    height: 120px;
+  }
+  
+  .container #products #products-container #product-div h2 {
+    font-size: 16px;
+  }
+  
+  .container #products #products-container #product-div p {
+    font-size: 14px;
+  }
+  
+  .container #products #products-container #product-div h5 {
+    font-size: 24px;
+  }
+
+  .container #products #products-container #product-div button {
+    height: 48px;
+
+    font-size: 16px;
+  }
 }
